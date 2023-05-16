@@ -45,4 +45,5 @@ jobs:
           git add .
           git commit -m "Upload festival files"
           git push --set-upstream origin main
-          GH_TOKEN: ${{ secrets.YOUR_TOKEN_NAME }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
