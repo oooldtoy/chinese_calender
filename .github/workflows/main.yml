@@ -1,8 +1,9 @@
 name: Festival Workflow
 
 on:
-  watch:
-    types: [started]
+  schedule:
+    - cron: "0 0 25 12 *"
+    - cron: "0 0 5 1 *"
 
 permissions:
   contents: write
