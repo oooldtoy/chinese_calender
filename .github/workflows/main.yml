@@ -1,4 +1,4 @@
-name: 贴吧签到
+name: 更新日历
 
 on:
   push:
@@ -21,4 +21,4 @@ jobs:
       - name: 'Install dependencies'
         run: python -m pip install --upgrade requests
       - name: 'Start update'
-        run: python festival
+        run: python festival.py
