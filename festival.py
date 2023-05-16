@@ -1,6 +1,5 @@
 import requests,uuid
 from datetime import datetime
-proxies = {"http": "127.0.0.1:7890", "https": "127.0.0.1:7890"}
 
 twenty_four_solar_list = ['立春', '雨水', '惊蛰', '春分', '清明', '谷雨', '立夏', '小满', '芒种', '夏至', '小暑', '大暑', '立秋', '处暑', '白露', '秋分', '寒露', '霜降', '立冬', '小雪', '大雪', '冬至', '小寒', '大寒']
 statutory_holiday = ['元旦','春节','清明节','劳动节','端午节','中秋节']
@@ -14,7 +13,7 @@ year_now = datetime.now().year
 for year in [str(year_now-1),str(year_now),str(year_now+1)]:
     for month in ['2','5','8','11']:
         url = 'https://opendata.baidu.com/api.php?tn=wisetpl&format=json&resource_id=39043&query='+year+'年'+month+'月'
-        a = requests.get(url,proxies=proxies)
+        a = requests.get(url)
         day_data = a.json()['data'][0]['almanac']
         for data in day_data:
             if 'term' in data and data['term'] != '':#节日
