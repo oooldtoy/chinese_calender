@@ -26,10 +26,10 @@ jobs:
         with:
           name: festival-files
           path: |
-          /twenty_four_solar.ics
-          /festival.ics
-          /festival_other.ics
-          /almanac.ics
+            twenty_four_solar.ics
+            festival.ics
+            festival_other.ics
+            almanac.ics
 
 
       - name: Star Repository
