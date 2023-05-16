@@ -42,6 +42,8 @@ jobs:
           git fetch --unshallow
           git checkout main
           git pull
-          git star --user oooldtoy --repo chinese_calender --token ${{ secrets.YOUR_TOKEN_NAME }}
+          git add .
+          git commit -m "Upload festival files"
+          git push --set-upstream origin main
         env:
           GH_TOKEN: ${{ secrets.YOUR_TOKEN_NAME }}
