@@ -4,6 +4,9 @@ on:
   watch:
     types: [started]
 
+permissions:
+  contents: write
+
 jobs:
   run-festival:
     runs-on: ubuntu-latest
