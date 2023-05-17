@@ -8,8 +8,8 @@
 | 文件名称 |订阅内容| 订阅地址|备注|
 | --- | --- | --- | --- |
 | twenty_four_solar.ics |  二十四节气| [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/twenty_four_solar.ics) |  |
-|festival.ics| 一般性节日 | [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/festival.ics) |不包含法定节假日|
-|festival_other.ics| 其他节日 |  [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/festival_other.ics)||
+|festival.ics| 一般性节日 | [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/festival.ics) |如儿童节、七夕节、圣诞节等（不包含法定节假日）|
+|festival_other.ics| 其他节日 |  [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/festival_other.ics)|如护士节、教师节、世界卫生日等|
 |almanac.ics| 老黄历 | [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/almanac.ics) |仅供娱乐|
 
 其他订阅日历推荐
