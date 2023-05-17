@@ -10,4 +10,12 @@
 | twenty_four_solar.ics |  二十四节气| [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/twenty_four_solar.ics) |  |
 |festival.ics| 一般性节日 | [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/festival.ics) |不包含法定节假日|
 |festival_other.ics| 其他节日 |  [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/festival_other.ics)||
-|almanac.ics| 老黄历 | [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/almanac.ics)<span style=" cursor: pointer;" onclick="navigator.clipboard.writeText('https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/almanac.ics')">📋</span> |仅供娱乐|
+|almanac.ics| 老黄历 | [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/almanac.ics) |仅供娱乐|
+
+其他订阅日历推荐
+
+| 订阅内容 | 订阅地址                                                                                                           | 项目地址 |
+|------|----------------------------------------------------------------------------------------------------------------|------|
+|   中国节假日补班日历   | [订阅链接](https://raw.githubusercontent.com/lanceliao/china-holiday-calender/master/holidayCal.ics)               |   [china-holiday-calender](https://github.com/lanceliao/china-holiday-calender)   |
+|   中国二十四节气日历   | [订阅链接](https://raw.githubusercontent.com/KaitoHH/24-jieqi-ics/master/23_solar_terms_2015-01-01_2050-12-31.ics) |   [24-jieqi-ics](https://github.com/KaitoHH/24-jieqi-ics)   |
+
