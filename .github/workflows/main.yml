@@ -1,6 +1,9 @@
 name: Festival Workflow
 
 on:
+  push:
+    branches:
+      - main 
   schedule:
     - cron: "0 0 25 12 *"
     - cron: "0 0 5 1 *"
