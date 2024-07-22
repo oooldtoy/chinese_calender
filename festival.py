@@ -1,5 +1,5 @@
 import requests,uuid
-from datetime import datetime
+from datetime import datetime, timezone
 
 twenty_four_solar_list = ['立春', '雨水', '惊蛰', '春分', '清明', '谷雨', '立夏', '小满', '芒种', '夏至', '小暑', '大暑', '立秋', '处暑', '白露', '秋分', '寒露', '霜降', '立冬', '小雪', '大雪', '冬至', '小寒', '大寒']
 statutory_holiday = ['元旦','春节','清明节','劳动节','端午节','中秋节']
@@ -34,27 +34,27 @@ print(almanac_data_list)
 f = open('twenty_four_solar.ics','w',encoding='utf-8')
 f.write('BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//github//Chinese Calendar//oooldtoy\nCALSCALE:GREGORIAN\nMETHOD:PUBLISH\nX-WR-CALNAME:节气\nX-WR-TIMEZONE:Asia/Shanghai\nX-WR-CALDESC:近三年节气，数据来自百度\n')
 for i in twenty_four_solar_data_list:
-    f.write('BEGIN:VEVENT\nDTSTAMP:'+str(datetime.now().date())+'\nUID:'+str(uuid.uuid4())+'\nDTSTART;VALUE=DATE:'+i[1]+'\nDTEND;VALUE=DATE:'+str(int(i[1])+1)+'\nSTATUS:CONFIRMED\nSUMMARY:'+i[0]+'\nEND:VEVENT\n')
+    f.write('BEGIN:VEVENT\nDTSTAMP:'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'\nUID:'+str(uuid.uuid4())+'\nDTSTART;VALUE=DATE:'+i[1]+'\nDTEND;VALUE=DATE:'+str(int(i[1])+1)+'\nSTATUS:CONFIRMED\nSUMMARY:'+i[0]+'\nEND:VEVENT\n')
 f.write('END:VCALENDAR')
 f.close()
 
 f = open('festival.ics','w',encoding='utf-8')
 f.write('BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//github//Chinese Calendar//oooldtoy\nCALSCALE:GREGORIAN\nMETHOD:PUBLISH\nX-WR-CALNAME:主要节日\nX-WR-TIMEZONE:Asia/Shanghai\nX-WR-CALDESC:近三年主要节日，数据来自百度\n')
 for i in festival_data_list:
-    f.write('BEGIN:VEVENT\nDTSTAMP:'+str(datetime.now().date())+'\nUID:'+str(uuid.uuid4())+'\nDTSTART;VALUE=DATE:'+i[1]+'\nDTEND;VALUE=DATE:'+str(int(i[1])+1)+'\nSTATUS:CONFIRMED\nSUMMARY:'+i[0]+'\nEND:VEVENT\n')
+    f.write('BEGIN:VEVENT\nDTSTAMP:'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'\nUID:'+str(uuid.uuid4())+'\nDTSTART;VALUE=DATE:'+i[1]+'\nDTEND;VALUE=DATE:'+str(int(i[1])+1)+'\nSTATUS:CONFIRMED\nSUMMARY:'+i[0]+'\nEND:VEVENT\n')
 f.write('END:VCALENDAR')
 f.close()
 
 f = open('festival_other.ics','w',encoding='utf-8')
 f.write('BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//github//Chinese Calendar//oooldtoy\nCALSCALE:GREGORIAN\nMETHOD:PUBLISH\nX-WR-CALNAME:其他节日\nX-WR-TIMEZONE:Asia/Shanghai\nX-WR-CALDESC:近三年其他节日，数据来自百度\n')
 for i in festival_data_list_other:
-    f.write('BEGIN:VEVENT\nDTSTAMP:'+str(datetime.now().date())+'\nUID:'+str(uuid.uuid4())+'\nDTSTART;VALUE=DATE:'+i[1]+'\nDTEND;VALUE=DATE:'+str(int(i[1])+1)+'\nSTATUS:CONFIRMED\nSUMMARY:'+i[0]+'\nEND:VEVENT\n')
+    f.write('BEGIN:VEVENT\nDTSTAMP:'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'\nUID:'+str(uuid.uuid4())+'\nDTSTART;VALUE=DATE:'+i[1]+'\nDTEND;VALUE=DATE:'+str(int(i[1])+1)+'\nSTATUS:CONFIRMED\nSUMMARY:'+i[0]+'\nEND:VEVENT\n')
 f.write('END:VCALENDAR')
 f.close()
 
 f = open('almanac.ics','w',encoding='utf-8')
 f.write('BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//github//Chinese Calendar//oooldtoy\nCALSCALE:GREGORIAN\nMETHOD:PUBLISH\nX-WR-CALNAME:黄历\nX-WR-TIMEZONE:Asia/Shanghai\nX-WR-CALDESC:近三年黄历，数据来自百度\n')
 for i in almanac_data_list:
-    f.write('BEGIN:VEVENT\nDTSTAMP:'+str(datetime.now().date())+'\nUID:'+str(uuid.uuid4())+'\nDTSTART;VALUE=DATE:'+i[2]+'\nDTEND;VALUE=DATE:'+str(int(i[2])+1)+'\nSTATUS:CONFIRMED\nSUMMARY:'+'宜：'+i[0]+'  忌：'+i[1]+'\nEND:VEVENT\n')
+    f.write('BEGIN:VEVENT\nDTSTAMP:'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'\nUID:'+str(uuid.uuid4())+'\nDTSTART;VALUE=DATE:'+i[2]+'\nDTEND;VALUE=DATE:'+str(int(i[2])+1)+'\nSTATUS:CONFIRMED\nSUMMARY:'+'宜：'+i[0]+'  忌：'+i[1]+'\nEND:VEVENT\n')
 f.write('END:VCALENDAR')
 f.close()
