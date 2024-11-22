@@ -31,7 +31,7 @@ jobs:
         run: python festival.py # 替换为你的运行脚本命令
 
       - name: Upload Generated Files
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: festival-files
           path: |
