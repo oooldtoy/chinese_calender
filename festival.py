@@ -2,7 +2,7 @@ import requests,cnlunar,uuid
 from datetime import datetime, timedelta,timezone
 
 twenty_four_solar_list = ['立春', '雨水', '惊蛰', '春分', '清明', '谷雨', '立夏', '小满', '芒种', '夏至', '小暑', '大暑', '立秋', '处暑', '白露', '秋分', '寒露', '霜降', '立冬', '小雪', '大雪', '冬至', '小寒', '大寒']
-statutory_holiday = ['元旦','春节','清明节','劳动节','端午节','中秋节']
+statutory_holiday = ['元旦','春节','清明节','劳动节','端午节','国庆节','中秋节']
 twenty_four_solar_data_list = []
 festival_data_list = []
 festival_data_list_other = []
