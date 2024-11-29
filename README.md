@@ -8,8 +8,8 @@
 | 文件名称 | 订阅内容  | 订阅地址|备注|
 | --- |-------| --- | --- |
 | twenty_four_solar.ics | 二十四节气 | [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/twenty_four_solar.ics) |  |
-|festival.ics| 一般性节日 | [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/festival.ics) |不包含法定节假日|
-|festival_other.ics| 其他节日  |  [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/festival_other.ics)||
+|festival.ics| 一般性节日 | [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/festival.ics) |如重阳节、圣诞节等（不包含法定节假日）|
+|festival_other.ics| 其他节日  |  [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/festival_other.ics)|如地球日、护士节等|
 |almanac.ics| 今日宜忌  | [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/main/almanac.ics) ||
 |auspicious_direction.ics| 吉神方位  | [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/refs/heads/main/auspicious_direction.ics) ||
 |good_bad_time.ics| 时辰吉凶  | [订阅链接](https://raw.githubusercontent.com/oooldtoy/chinese_calender/refs/heads/main/good_bad_time.ics) ||
